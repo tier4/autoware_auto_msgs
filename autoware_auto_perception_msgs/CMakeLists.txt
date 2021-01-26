@@ -27,6 +27,9 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/TrackedObject.idl"
   "msg/TrackedObjectKinematics.idl"
   "msg/TrackedObjects.idl"
+  "msg/TrafficLight.idl"
+  "msg/TrafficSignal.idl"
+  "msg/TrafficSignalArray.idl"
   DEPENDENCIES
     "autoware_auto_geometry_msgs"
     "geometry_msgs"
