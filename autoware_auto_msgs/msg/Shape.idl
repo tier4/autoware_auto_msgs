@@ -20,7 +20,7 @@ module autoware_auto_msgs {
       @verbatim (language="comment", text=
         " x: the length of the object (BOUNDING_BOX) or diameter (CYLINDER)"
         " y: the width of the object (BOUNDING_BOX)"
-        " z: the overall height of the object in meters")
+        " z: the overall height of the object")
       geometry_msgs::msg::Vector3 dimensions;
     };
   };
