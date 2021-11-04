@@ -23,6 +23,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/TurnIndicatorsCommand.idl"
   "msg/TurnIndicatorsReport.idl"
   "msg/VehicleControlCommand.idl"
+  "msg/ActuationStatusStamped.idl"
+  "msg/ActuationCommandStamped.idl"
   "msg/VehicleKinematicState.idl"
   "msg/VehicleOdometry.idl"
   "msg/VehicleStateCommand.idl"

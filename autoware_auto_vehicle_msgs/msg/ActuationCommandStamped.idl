@@ -1,0 +1,17 @@
+#include "std_msgs/msg/header.idl"
+
+module autoware_auto_vehicle_msgs {
+  module msg {
+     @verbatim (language="comment", text=
+      "this command can be used for any units of mechanical input at any vehicle interfaces.")
+    struct ActuationCommandStamped {
+      std_msgs::msg::Header stamp;
+      @verbatim (language="comment", text= "Unit [-] | any accel command for mechanical input.")
+      uint32 accel_cmd;
+      @verbatim (language="comment", text= "Unit [-] | any brake command for mechanical input.")
+      uint32 brake_cmd;
+      @verbatim (language="comment", text= "Unit [-] | any steer command for mechanical input.")
+      int32 steer_cmd;
+    };
+  };
+};
