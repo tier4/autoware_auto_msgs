@@ -1,10 +1,10 @@
 #include "autoware_auto_perception_msgs/msg/TrafficSignal.idl"
-#include "builtin_interfaces/msg/Time.idl"
+#include "std_msgs/msg/Header.idl"
 
 module autoware_auto_perception_msgs {
   module msg {
     struct TrafficSignalArray {
-      builtin_interfaces::msg::Time timestamp;
+      std_msgs::msg::Header header;
       sequence<autoware_auto_perception_msgs::msg::TrafficSignal> signals;
     };
   };
