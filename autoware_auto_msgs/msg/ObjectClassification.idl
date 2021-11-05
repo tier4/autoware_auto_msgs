@@ -12,9 +12,9 @@ module autoware_auto_msgs {
 
     struct ObjectClassification {
       @verbatim (language="comment", text=
-        " Valid values for the classification field are provided in"
+        " Valid values for the label field are provided in"
         " ObjectClassification_Constants.")
-      uint8 classification;
+      uint8 label;
 
       @range (min=0.0, max=1.0)
       float probability;
