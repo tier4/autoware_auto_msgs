@@ -3,12 +3,8 @@
 
 module autoware_auto_perception_msgs {
   module msg {
-    @verbatim (language="comment", text="")
     struct TrafficLightRoiArray {
-      @verbatim (language="comment", text="")
-
       std_msgs::msg::Header header;
-
       sequence<autoware_auto_perception_msgs::msg::TrafficLightRoi> rois;
     };
   };
