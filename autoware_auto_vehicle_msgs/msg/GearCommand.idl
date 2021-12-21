@@ -5,7 +5,7 @@ module autoware_auto_vehicle_msgs {
     module GearCommand_Constants {
       const uint8 NONE = 0;
       const uint8 NEUTRAL = 1;
-      const uint8 DRIVE_1 = 2;
+      const uint8 DRIVE = 2;
       const uint8 DRIVE_2 = 3;
       const uint8 DRIVE_3 = 4;
       const uint8 DRIVE_4 = 5;
