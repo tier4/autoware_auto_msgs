@@ -3,6 +3,7 @@
 module autoware_auto_vehicle_msgs {
   module msg {
     module GearReport_Constants {
+      const uint8 NEUTRAL = 0;
       const uint8 DRIVE = 1;
       const uint8 DRIVE_2 = 2;
       const uint8 DRIVE_3 = 3;
