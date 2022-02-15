@@ -12,6 +12,12 @@ module autoware_auto_vehicle_msgs {
         " or right (negative) of center (0.0)")
       @default (value=0.0)
       float steering_tire_angle;
+
+      @verbatim (language="comment", text=
+        " Desired angle of the rear steering tire in radians left (positive)"
+        " or right (negative) of center (0.0)")
+      @default (value=0.0)
+      float rear_steering_tire_angle;
     };
   };
 };
