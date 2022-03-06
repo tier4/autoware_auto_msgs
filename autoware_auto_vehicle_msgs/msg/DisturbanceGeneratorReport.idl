@@ -1,0 +1,25 @@
+#include "builtin_interfaces/msg/Time.idl"
+
+module autoware_auto_vehicle_msgs{
+		module msg               {
+			@verbatim (language = "comment", text = " Messages to visualize disturbance generator functions  ")
+			struct DisturbanceGeneratorReport
+				{
+				builtin_interfaces::msg::Time stamp;
+
+				@verbatim (language = "comment", text = " test ")
+				@default (value = 0.0)
+				float steer_delayed_input;
+
+				@verbatim (language = "comment", text = "test")
+				@default (value = 0.0)
+				float steering_tire_rotation_rate;
+
+				@verbatim (language = "comment", text = "test")
+				@default (value = 0.0)
+				float steer_time_delay_value;
+				};
+
+		};
+};
+
