@@ -9,15 +9,31 @@ module autoware_auto_vehicle_msgs{
 
 				@verbatim (language = "comment", text = " test ")
 				@default (value = 0.0)
+				float steer_original_input;
+
+				@verbatim (language = "comment", text = "test")
+				@default (value = 0.0)
 				float steer_delayed_input;
 
 				@verbatim (language = "comment", text = "test")
 				@default (value = 0.0)
-				float steering_tire_rotation_rate;
+				float steer_time_delay_value;
+
+				@verbatim (language = "comment", text = " test ")
+				@default (value = 0.0)
+				float acc_original_input;
 
 				@verbatim (language = "comment", text = "test")
 				@default (value = 0.0)
-				float steer_time_delay_value;
+				float acc_delayed_input;
+
+				@verbatim (language = "comment", text = "test")
+				@default (value = 0.0)
+				float acc_time_delay_value;
+
+				@verbatim (language = "comment", text = "test")
+				@default (value = 0.0)
+				float road_slope_acc;
 				};
 
 		};
