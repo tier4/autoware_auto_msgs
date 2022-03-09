@@ -7,33 +7,62 @@ module autoware_auto_vehicle_msgs{
 				{
 				builtin_interfaces::msg::Time stamp;
 
-				@verbatim (language = "comment", text = " test ")
+				// Steering messages
+				@verbatim (language = "comment", text = "Original stering input nondelay")
 				@default (value = 0.0)
 				float steer_original_input;
 
-				@verbatim (language = "comment", text = "test")
+				@verbatim (language = "comment", text = "Delayed steering")
 				@default (value = 0.0)
 				float steer_delayed_input;
 
-				@verbatim (language = "comment", text = "test")
+				@verbatim (language = "comment", text = "Steering time delay value")
 				@default (value = 0.0)
 				float steer_time_delay_value;
 
-				@verbatim (language = "comment", text = " test ")
+				// Acceleration messages
+				@verbatim (language = "comment", text = "Original acceleration input nondelay ")
 				@default (value = 0.0)
 				float acc_original_input;
 
-				@verbatim (language = "comment", text = "test")
+				@verbatim (language = "comment", text = "Delayed acceleration input")
 				@default (value = 0.0)
 				float acc_delayed_input;
 
-				@verbatim (language = "comment", text = "test")
+				@verbatim (language = "comment", text = "Acceleration time delay value")
 				@default (value = 0.0)
 				float acc_time_delay_value;
 
-				@verbatim (language = "comment", text = "test")
+				// Road slope messages
+				@verbatim (language = "comment", text = "Acceleration that slope creates")
 				@default (value = 0.0)
 				float road_slope_acc;
+
+				// Deadzone parameters messages
+				@verbatim (language = "comment", text = "Left deadzone slope")
+				@default (value = 1.0)
+				float left_deadzone_slope;
+
+				@verbatim (language = "comment", text = "Left deadzone threshold")
+				@default (value = 0.0)
+				float left_deadzone_threshold;
+
+				@verbatim (language = "comment", text = "Right deadzone slope")
+				@default (value = 1.0)
+				float right_deadzone_slope;
+
+				@verbatim (language = "comment", text = "Right deadzone threshold")
+				@default (value = 0.0)
+				float right_deadzone_threshold;
+
+				@verbatim (language = "comment", text = "Deadzone input")
+				@default (value = 0.0)
+				float deadzone_input;
+
+				@verbatim (language = "comment", text = "Deadzone output")
+				@default (value = 0.0)
+				float deadzone_output;
+
 				};
 
 		};
