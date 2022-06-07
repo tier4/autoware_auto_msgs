@@ -1,10 +1,13 @@
 module autoware_auto_perception_msgs {
   module msg {
     module TrafficLight_Constants {
+      // constants for color
       const uint8 RED = 1;
       const uint8 AMBER = 2;
       const uint8 GREEN = 3;
       const uint8 WHITE = 4;
+
+      // constants for shape
       const uint8 CIRCLE = 5;
       const uint8 LEFT_ARROW = 6;
       const uint8 RIGHT_ARROW = 7;
@@ -13,9 +16,13 @@ module autoware_auto_perception_msgs {
       const uint8 DOWN_LEFT_ARROW = 10;
       const uint8 DOWN_RIGHT_ARROW = 11;
       const uint8 CROSS = 12;
+
+      // constants for status
       const uint8 SOLID_OFF = 13;
       const uint8 SOLID_ON = 14;
       const uint8 FLASHING = 15;
+
+      // constants for common use
       const uint8 UNKNOWN = 16;
     };
     struct TrafficLight {
