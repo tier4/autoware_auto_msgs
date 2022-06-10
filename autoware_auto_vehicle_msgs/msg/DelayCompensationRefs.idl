@@ -1,0 +1,49 @@
+#include "builtin_interfaces/msg/Time.idl"
+
+module autoware_auto_vehicle_msgs{
+		module msg               {
+			@verbatim (language = "comment", text = " Reference error messages to estimate undelayed tracking references. ")
+			struct DelayCompensationRefs
+				{
+				builtin_interfaces::msg::Time stamp;
+
+				// Lateral deviation - error
+				@verbatim (language = "comment", text = "The lateral deviation error computed by the controller")
+				@default (value = 0.0)
+				float lateral_deviation_read;
+
+				@verbatim (language = "comment", text = "The correction computed by the compensator")
+				@default (value = 0.0)
+				float lateral_deviation_error_compensation_ref;
+
+				// Heading deviation - error
+				@verbatim (language = "comment", text = "The heading deviation error computed by the controller")
+				@default (value = 0.0)
+				float heading_angle_error_read;
+
+				@verbatim (language = "comment", text = "The correction computed by the compensator")
+				@default (value = 0.0)
+				float heading_angle_error_compensation_ref;
+
+                // Steering deviation - error
+                @verbatim (language = "comment", text = "The steering deviation error computed by the controller")
+                @default (value = 0.0)
+                float steering_error_read;
+
+                @verbatim (language = "comment", text = "The correction computed by the compensator")
+                @default (value = 0.0)
+                float steering_error_compensation_ref;
+
+                // Velocity deviation - error
+                @verbatim (language = "comment", text = "The velocity deviation error computed by the controller")
+                @default (value = 0.0)
+                float velocity_error_read;
+
+                @verbatim (language = "comment", text = "The correction computed by the compensator")
+                @default (value = 0.0)
+                float velocity_error_compensation_ref;
+
+				};
+
+		};
+};
