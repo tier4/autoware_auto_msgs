@@ -7,8 +7,7 @@ module autoware_auto_vehicle_msgs {
       const uint8 AUTONOMOUS = 1;
       const uint8 MANUAL = 2;
     };
-    @verbatim (language="comment", text=
-      " ControlModeCommand.msg")
+    @verbatim (language="comment", text=  " ControlModeCommand.msg")
     struct ControlModeCommand {
       builtin_interfaces::msg::Time stamp;
 

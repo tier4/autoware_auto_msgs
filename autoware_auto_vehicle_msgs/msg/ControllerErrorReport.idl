@@ -12,7 +12,6 @@ module autoware_auto_vehicle_msgs{
 				@default (value = 0.0)
 				float lateral_deviation_read;
 
-
 				// Heading deviation - error
 				@verbatim (language = "comment", text = "The heading deviation error computed by the controller")
 				@default (value = 0.0)
@@ -26,3 +25,8 @@ module autoware_auto_vehicle_msgs{
                 @verbatim (language = "comment", text = "The correction computed by the compensator")
                 @default (value = 0.0)
                 float velocity_error_compensation_ref;
+
+                };
+
+        };
+};
