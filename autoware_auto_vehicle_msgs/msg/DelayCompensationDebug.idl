@@ -28,6 +28,10 @@ module autoware_auto_vehicle_msgs{
                 @default (value = 0.0)
                 float lat_du; // filtered input
 
+                @verbatim (language = "comment", text = "simulated d_u for the lateral error input")
+                @default (value = 0.0)
+                float lat_u_nondelay_u_estimated; // filtered input
+
                 @verbatim (language = "comment", text = "simulated reference correction term ydu for the lateral error input")
                 @default (value = 0.0)
                 float lat_ydu;
@@ -44,6 +48,10 @@ module autoware_auto_vehicle_msgs{
                 @verbatim (language = "comment", text = "simulated d_u for the longitudinal error input")
                 @default (value = 0.0)
                 float lon_du; // filtered input
+
+                @verbatim (language = "comment", text = "simulated d_u for the longitudinal error input")
+                @default (value = 0.0)
+                float lon_nondelay_u_estimated; // filtered input
 
                 @verbatim (language = "comment", text = "simulated reference correction term ydu for the longitudinal error input")
                 @default (value = 0.0)
@@ -62,6 +70,10 @@ module autoware_auto_vehicle_msgs{
                 @default (value = 0.0)
                 float heading_du; // filtered input
 
+                @verbatim (language = "comment", text = "simulated d_u for the heading error input")
+                @default (value = 0.0)
+                float heading_nondelay_u_estimated; // filtered input
+
                 @verbatim (language = "comment", text = "simulated reference correction term ydu for the heading error input")
                 @default (value = 0.0)
                 float heading_ydu;
@@ -78,6 +90,10 @@ module autoware_auto_vehicle_msgs{
                  @verbatim (language = "comment", text = "simulated d_u for the steering error input")
                  @default (value = 0.0)
                  float steering_du; // filtered input
+
+                 @verbatim (language = "comment", text = "simulated d_u for the steering error input")
+                 @default (value = 0.0)
+                 float steering_nondelay_u_estimated; // filtered input
 
                  @verbatim (language = "comment", text = "simulated reference correction term ydu for the steering error input")
                  @default (value = 0.0)
