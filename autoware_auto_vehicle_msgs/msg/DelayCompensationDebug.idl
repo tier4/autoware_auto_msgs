@@ -1,0 +1,88 @@
+#include "builtin_interfaces/msg/Time.idl"
+
+/**
+* @brief Outputs of the delay compensator.
+* y0: u_filtered,Q(s)*u where u is the input sent to the system.
+* y2: u-d_u = (Q(s)/G(s))*y_system where y_system is the measured system response.
+* y2: du = y0 - y1 where du is the estimated disturbance input
+* y3: ydu = G(s)*du where ydu is the response of the system to du.
+* */
+
+module autoware_auto_vehicle_msgs{
+		module msg               {
+			@verbatim (language = "comment", text = "Delay Compensation Debug Message")
+			struct DelayCompensationDebug
+				{
+				builtin_interfaces::msg::Time stamp;
+
+                // Lateral Error
+				@verbatim (language = "comment", text = "filtered output for the lateral error input")
+				@default (value = 0.0)
+				float lat_uf;
+
+                @verbatim (language = "comment", text = "simulated u-d_u for the lateral error input")
+                @default (value = 0.0)
+                float lat_u_du;
+
+                @verbatim (language = "comment", text = "simulated d_u for the lateral error input")
+                @default (value = 0.0)
+                float lat_du; // filtered input
+
+                @verbatim (language = "comment", text = "simulated reference correction term ydu for the lateral error input")
+                @default (value = 0.0)
+                float lat_ydu;
+
+                // Longitudinal Error
+				@verbatim (language = "comment", text = "filtered output for the longitudinal error input")
+				@default (value = 0.0)
+				float lon_uf;
+
+                @verbatim (language = "comment", text = "simulated u-d_u for the longitudinal error input")
+                @default (value = 0.0)
+                float lon_u_du;
+
+                @verbatim (language = "comment", text = "simulated d_u for the longitudinal error input")
+                @default (value = 0.0)
+                float lon_du; // filtered input
+
+                @verbatim (language = "comment", text = "simulated reference correction term ydu for the longitudinal error input")
+                @default (value = 0.0)
+                float lon_ydu;
+
+                // Heading Error
+				@verbatim (language = "comment", text = "filtered output for the heading error input")
+				@default (value = 0.0)
+				float heading_uf;
+
+                @verbatim (language = "comment", text = "simulated u-d_u for the heading error input")
+                @default (value = 0.0)
+                float heading_u_du;
+
+                @verbatim (language = "comment", text = "simulated d_u for the heading error input")
+                @default (value = 0.0)
+                float heading_du; // filtered input
+
+                @verbatim (language = "comment", text = "simulated reference correction term ydu for the heading error input")
+                @default (value = 0.0)
+                float heading_ydu;
+
+                // Steering Error
+ 				@verbatim (language = "comment", text = "filtered output for the steering error input")
+ 				@default (value = 0.0)
+ 				float steering_uf;
+
+                 @verbatim (language = "comment", text = "simulated u-d_u for the steering error input")
+                 @default (value = 0.0)
+                 float steering_u_du;
+
+                 @verbatim (language = "comment", text = "simulated d_u for the steering error input")
+                 @default (value = 0.0)
+                 float steering_du; // filtered input
+
+                 @verbatim (language = "comment", text = "simulated reference correction term ydu for the steering error input")
+                 @default (value = 0.0)
+                 float steering_ydu;
+                };
+
+        };
+};

@@ -37,6 +37,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
         "msg/WipersCommand.idl"
         "msg/DisturbanceGeneratorReport.idl"
         "msg/DelayCompensationRefs.idl"
+        "msg/DelayCompensationDebug.idl"
         "msg/ControllerErrorReport.idl"
         "msg/WipersReport.idl"
         "srv/AutonomyModeChange.idl"
