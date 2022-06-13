@@ -24,6 +24,10 @@ module autoware_auto_vehicle_msgs{
 
                 @verbatim (language = "comment", text = "The correction computed by the compensator")
                 @default (value = 0.0)
+                float velocity_error_read;
+
+                @verbatim (language = "comment", text = "The correction computed by the compensator")
+                @default (value = 0.0)
                 float velocity_error_compensation_ref;
 
                 };
