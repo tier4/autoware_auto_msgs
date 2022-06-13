@@ -98,6 +98,15 @@ module autoware_auto_vehicle_msgs{
                  @verbatim (language = "comment", text = "simulated reference correction term ydu for the steering error input")
                  @default (value = 0.0)
                  float steering_ydu;
+
+                 @verbatim (language = "comment", text = "estimated steering time constant for a-term in xdot = -ax + bu")
+                 @default (value = 0.0)
+                 float steering_tau_a;
+
+                 @verbatim (language = "comment", text = "estimated steering time constant for b-term in xdot = -ax + bu")
+                 @default (value = 0.0)
+                 float steering_tau_b;
+
                 };
 
         };
