@@ -83,29 +83,29 @@ module autoware_auto_vehicle_msgs{
  				@default (value = 0.0)
  				float steering_uf;
 
-                 @verbatim (language = "comment", text = "simulated u-d_u for the steering error input")
-                 @default (value = 0.0)
-                 float steering_u_du;
+                @verbatim (language = "comment", text = "simulated u-d_u for the steering error input")
+                @default (value = 0.0)
+                float steering_u_du;
 
-                 @verbatim (language = "comment", text = "simulated d_u for the steering error input")
-                 @default (value = 0.0)
-                 float steering_du; // filtered input
+                @verbatim (language = "comment", text = "simulated d_u for the steering error input")
+                @default (value = 0.0)
+                float steering_du; // filtered input
 
-                 @verbatim (language = "comment", text = "simulated d_u for the steering error input")
-                 @default (value = 0.0)
-                 float steering_nondelay_u_estimated; // filtered input
+                @verbatim (language = "comment", text = "simulated d_u for the steering error input")
+                @default (value = 0.0)
+                float steering_nondelay_u_estimated; // filtered input
 
-                 @verbatim (language = "comment", text = "simulated reference correction term ydu for the steering error input")
-                 @default (value = 0.0)
-                 float steering_ydu;
+                @verbatim (language = "comment", text = "simulated reference correction term ydu for the steering error input")
+                @default (value = 0.0)
+                float steering_ydu;
 
-                 @verbatim (language = "comment", text = "estimated steering time constant for a-term in xdot = -ax + bu")
-                 @default (value = 0.0)
-                 float steering_tau_a;
+                @verbatim (language = "comment", text = "estimated steering time constant for a-term in xdot = -ax + bu")
+                @default (value = 0.0)
+                float steering_tau_a;
 
-                 @verbatim (language = "comment", text = "estimated steering time constant for b-term in xdot = -ax + bu")
-                 @default (value = 0.0)
-                 float steering_tau_b;
+                @verbatim (language = "comment", text = "estimated steering time constant for b-term in xdot = -ax + bu")
+                @default (value = 0.0)
+                float steering_tau_b;
 
                 };
 
