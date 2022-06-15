@@ -1,36 +1,34 @@
 #include "builtin_interfaces/msg/Time.idl"
 
-module autoware_auto_vehicle_msgs{
-		module msg               {
-			@verbatim (language = "comment", text = "The error terms estimated by the controllers ")
-			struct ControllerErrorReport
-				{
-				builtin_interfaces::msg::Time stamp;
+module autoware_auto_vehicle_msgs {
+	module msg {
+		@verbatim (language = "comment", text = "The error terms estimated by the controllers ")
+		struct ControllerErrorReport
+			{
+			builtin_interfaces::msg::Time stamp;
 
-				// Lateral deviation - error
-				@verbatim (language = "comment", text = "The lateral deviation error computed by the controller")
-				@default (value = 0.0)
-				float lateral_deviation_read;
+			// Lateral deviation - error
+			@verbatim (language = "comment", text = "The lateral deviation error computed by the controller")
+			@default (value = 0.0)
+			float lateral_deviation_read;
 
-				// Heading deviation - error
-				@verbatim (language = "comment", text = "The heading deviation error computed by the controller")
-				@default (value = 0.0)
-				float heading_angle_error_read;
+			// Heading deviation - error
+			@verbatim (language = "comment", text = "The heading deviation error computed by the controller")
+			@default (value = 0.0)
+			float heading_angle_error_read;
 
-                // Steering deviation - error
-                @verbatim (language = "comment", text = "The steering deviation error computed by the controller")
-                @default (value = 0.0)
-                float steering_error_read;
+      // Steering deviation - error
+      @verbatim (language = "comment", text = "The steering deviation error computed by the controller")
+      @default (value = 0.0)
+      float steering_error_read;
 
-                @verbatim (language = "comment", text = "The correction computed by the compensator")
-                @default (value = 0.0)
-                float velocity_error_read;
+      @verbatim (language = "comment", text = "The velocity deviation error computed by the controller")
+      @default (value = 0.0)
+      float velocity_error_read;
 
-                @verbatim (language = "comment", text = "The correction computed by the compensator")
-                @default (value = 0.0)
-                float velocity_error_compensation_ref;
-
-                };
-
-        };
+      @verbatim (language = "comment", text = "The acceleration deviation error computed by the controller")
+      @default (value = 0.0)
+      float acceleration_error_read;
+			};
+   };
 };
