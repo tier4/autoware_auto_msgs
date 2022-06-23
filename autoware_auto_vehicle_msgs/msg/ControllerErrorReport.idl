@@ -26,6 +26,10 @@ module autoware_auto_vehicle_msgs{
         @default (value = 0.0)
         float curvature_read;
 
+        @verbatim (language = "comment", text = "The target velocity computed by the controller")
+        @default (value = 0.0)
+        float target_velocity_read;
+
         @verbatim (language = "comment", text = "The velocity deviation error computed by the controller")
         @default (value = 0.0)
         float velocity_error_read;
