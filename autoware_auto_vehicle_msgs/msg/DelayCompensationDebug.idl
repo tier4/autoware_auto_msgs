@@ -1,143 +1,46 @@
 #include "builtin_interfaces/msg/Time.idl"
 
-module autoware_auto_vehicle_msgs {
+module autoware_auto_vehicle_msgs{
   module msg {
     @verbatim (language = "comment", text = "Delay Compensation Debug Message")
-    struct DelayCompensationDebug {
-      builtin_interfaces::msg::Time stamp;
-			// Lateral Error
-      @verbatim (language = "comment", text = "filtered output for the lateral error input")
-      @default (value = 0.0)
-      float lat_uf;
+    struct DelayCompensationDebug
+        {
+        builtin_interfaces::msg::Time stamp;
 
-      @verbatim (language = "comment", text = "simulated u-d_u for the lateral error input")
-      @default (value = 0.0)
-      float lat_u_du;
+        // Lateral Error
+        @verbatim (language = "comment", text = "filtered output for the lateral error input")
+        @default (value = 0.0)
+        float lat_uf;
 
-      @verbatim (language = "comment", text = "simulated d_u for the lateral error input")
-      @default (value = 0.0)
-      float lat_du; // filtered input
+        @verbatim (language = "comment", text = "filtered output for the lateral error disturbance estimate")
+        @default (value = 0.0)
+        float lat_duf;
 
-      @verbatim (language = "comment", text = "simulated d_u for the lateral error input")
-      @default (value = 0.0)
-      float lat_u_nondelay_u_estimated; // filtered input
+        @verbatim (language = "comment", text = "state observer output, lateral error estimate")
+        @default (value = 0.0)
+        float lat_ey_hat;
 
-      @verbatim (language = "comment", text = "estimated response of system to the delay disturbance")
-      @default (value = 0.0)
-      float lat_ydu;
+        @verbatim (language = "comment", text = "state observer output, yaw error estimate")
+        @default (value = 0.0)
+        float lat_eyaw_hat;
 
-      @verbatim (language = "comment", text = "estimated delay free response for the lateral error input")
-      @default (value = 0.0)
-      float lat_yu;
+        @verbatim (language = "comment", text = "state observer output, steering state estimate")
+        @default (value = 0.0)
+        float lat_steering_hat;
 
-      // Heading Error
-      @verbatim (language = "comment", text = "filtered output for the heading error input")
-      @default (value = 0.0)
-      float heading_uf;
+        @verbatim (language = "comment", text = "time delay compensator ey compensation reference")
+        @default (value = 0.0)
+        float td_ey_ref;
 
-      @verbatim (language = "comment", text = "simulated u-d_u for the heading error input")
-      @default (value = 0.0)
-      float heading_u_du;
+        @verbatim (language = "comment", text = "time delay compensator eyaw compensation reference")
+        @default (value = 0.0)
+        float td_eyaw_ref;
 
-      @verbatim (language = "comment", text = "simulated d_u for the heading error input")
-      @default (value = 0.0)
-      float heading_du; // filtered input
+        @verbatim (language = "comment", text = "time delay compensator steering compensation reference")
+        @default (value = 0.0)
+        float td_steering_ref;
 
-      @verbatim (language = "comment", text = "simulated d_u for the heading error input")
-      @default (value = 0.0)
-      float heading_nondelay_u_estimated; // filtered input
-
-      @verbatim (language = "comment", text = "estimated response of system to the delay disturbance")
-      @default (value = 0.0)
-      float heading_ydu;
-
-      @verbatim (language = "comment", text = "estimated delay free response")
-      @default (value = 0.0)
-      float heading_yu;
-
-      // Steering Error
-      @verbatim (language = "comment", text = "filtered output for the steering error input")
-      @default (value = 0.0)
-      float steering_uf;
-
-      @verbatim (language = "comment", text = "simulated u-d_u for the steering error input")
-      @default (value = 0.0)
-      float steering_u_du;
-
-      @verbatim (language = "comment", text = "simulated d_u for the steering error input")
-      @default (value = 0.0)
-      float steering_du;
-
-      @verbatim (language = "comment", text = "simulated d_u for the steering error input")
-      @default (value = 0.0)
-      float steering_nondelay_u_estimated; // filtered input
-
-      @verbatim (language = "comment", text = "estimated response of system to the delay disturbance")
-      @default (value = 0.0)
-      float steering_ydu;
-
-      @verbatim (language = "comment", text = "estimated delay free response")
-      @default (value = 0.0)
-      float steering_yu;
-
-      @verbatim (language = "comment", text = "estimated steering time constant for a-term in xdot = -ax + bu")
-      @default (value = 0.0)
-      float steering_tau_a;
-
-      @verbatim (language = "comment", text = "estimated steering time constant for b-term in xdot = -ax + bu")
-      @default (value = 0.0)
-      float steering_tau_b;
-
-      // Velocity debug messages
-      @verbatim (language = "comment", text = "filtered output for the velocity error input")
-      @default (value = 0.0)
-      float vel_uf;
-
-      @verbatim (language = "comment", text = "simulated u-d_u for the velocity error input")
-      @default (value = 0.0)
-      float vel_u_du;
-
-      @verbatim (language = "comment", text = "simulated d_u for the velocity error input")
-      @default (value = 0.0)
-      float vel_du; // filtered input
-
-      @verbatim (language = "comment", text = "simulated d_u for the velocity error input")
-      @default (value = 0.0)
-      float vel_u_nondelay_u_estimated; // filtered input
-
-      @verbatim (language = "comment", text = "estimated response of system to the delay disturbance")
-      @default (value = 0.0)
-      float vel_ydu;
-
-      @verbatim (language = "comment", text = "estimated delay free response for the velocity error input")
-      @default (value = 0.0)
-      float vel_yu;
-
-      // Acceleration debug messages
-      @verbatim (language = "comment", text = "filtered output for the acceleration error input")
-      @default (value = 0.0)
-      float acc_uf;
-
-      @verbatim (language = "comment", text = "simulated u-d_u for the acceleration error input")
-      @default (value = 0.0)
-      float acc_u_du;
-
-      @verbatim (language = "comment", text = "simulated d_u for the acceleration error input")
-      @default (value = 0.0)
-      float acc_du; // filtered input
-
-      @verbatim (language = "comment", text = "simulated d_u for the acceleration error input")
-      @default (value = 0.0)
-      float acc_u_nondelay_u_estimated; // filtered input
-
-      @verbatim (language = "comment", text = "estimated response of system to the delay disturbance")
-      @default (value = 0.0)
-      float acc_ydu;
-
-      @verbatim (language = "comment", text = "estimated delay free response for the acceleration error input")
-      @default (value = 0.0)
-      float acc_yu;
-    };
+        };
   };
 };
 
