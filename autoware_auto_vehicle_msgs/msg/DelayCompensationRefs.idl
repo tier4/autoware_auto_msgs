@@ -32,7 +32,7 @@ module autoware_auto_vehicle_msgs{
 
         @verbatim (language = "comment", text = "The correction computed by the compensator")
         @default (value = 0.0)
-        float steering_error_compensation_ref;
+        float steering_compensation_ref;
 
         // Velocity deviation - error
         @verbatim (language = "comment", text = "The velocity deviation error computed by the controller")
