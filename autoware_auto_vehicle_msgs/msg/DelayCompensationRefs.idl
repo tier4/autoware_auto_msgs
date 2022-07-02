@@ -34,6 +34,10 @@ module autoware_auto_vehicle_msgs{
         @default (value = 0.0)
         float steering_compensation_ref;
 
+        @verbatim (language = "comment", text = "The steering value observed by the controller")
+        @default (value = 0.0)
+        float steering_dob;
+
         // Velocity deviation - error
         @verbatim (language = "comment", text = "The velocity deviation error computed by the controller")
         @default (value = 0.0)
