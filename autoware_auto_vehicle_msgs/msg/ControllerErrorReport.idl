@@ -10,33 +10,33 @@ module autoware_auto_vehicle_msgs{
         // Lateral deviation - error
         @verbatim (language = "comment", text = "The lateral deviation error computed by the controller")
         @default (value = 0.0)
-        float lateral_deviation_read;
+        double lateral_deviation_read;
 
         // Heading deviation - error
         @verbatim (language = "comment", text = "The heading deviation error computed by the controller")
         @default (value = 0.0)
-        float heading_angle_error_read;
+        double heading_angle_error_read;
 
         // Steering or its deviation - error
         @verbatim (language = "comment", text = "The steering deviation error computed by the controller")
         @default (value = 0.0)
-        float steering_read;
+        double steering_read;
 
         @verbatim (language = "comment", text = "The curvature computed by the controller")
         @default (value = 0.0)
-        float curvature_read;
+        double curvature_read;
 
         @verbatim (language = "comment", text = "The target velocity computed by the controller")
         @default (value = 0.0)
-        float target_velocity_read;
+        double target_velocity_read;
 
         @verbatim (language = "comment", text = "The velocity deviation error computed by the controller")
         @default (value = 0.0)
-        float velocity_error_read;
+        double velocity_error_read;
 
         @verbatim (language = "comment", text = "The acceleration deviation error computed by the controller")
         @default (value = 0.0)
-        float acceleration_error_read;
+        double acceleration_error_read;
         };
   };
 };
