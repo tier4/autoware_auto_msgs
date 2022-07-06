@@ -1,0 +1,24 @@
+#include "builtin_interfaces/msg/Time.idl"
+#include "autoware_auto_system_msgs/msg/MRMBehavior.idl"
+
+module autoware_auto_system_msgs {
+  module msg {
+
+    module MRMResponse_Constants {
+      const uint8 NORMAL = 0;
+      const uint8 MRM_OPERATION_OK = 10;
+      const uint8 MRM_OPERATION_FAIL = 11;
+      const uint8 DRY_RUN_OPERATION_OK = 20;
+      const uint8 DRY_RUN_OPERATION_FAIL = 21;
+    };
+
+    @verbatim (language="comment", text=
+      " MRM response message.")
+    struct MRMResponse {
+      builtin_interfaces::msg::Time stamp;
+
+      uint8 response;
+      autoware_auto_system_msgs::msg::MRMBehavior behavior;
+    };
+  };
+};

@@ -1,0 +1,17 @@
+module autoware_auto_system_msgs {
+  module msg {
+
+    module MRMBehavior_Constants {
+      const uint8 COMFORTABLE_STOP = 0;
+      const uint8 SUDDEN_STOP = 10;
+      const uint8 VELOCITY_LIMIT = 20;
+      const uint8 STOP_SHOULDER = 30;
+    };
+
+    @verbatim (language="comment", text=
+      " MRM behavior list.")
+    struct MRMBehavior {
+      uint8 behavior;
+    };
+  };
+};

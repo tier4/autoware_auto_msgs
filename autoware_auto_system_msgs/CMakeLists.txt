@@ -17,6 +17,10 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Float32MultiArrayDiagnostic.idl"
   "msg/HazardStatus.idl"
   "msg/HazardStatusStamped.idl"
+  "msg/MRMCommand.idl"
+  "msg/MRMStatus.idl"
+  "msg/MRMResponse.idl"
+  "msg/MRMBehavior.idl"
   DEPENDENCIES
     "builtin_interfaces"
     "diagnostic_msgs"
