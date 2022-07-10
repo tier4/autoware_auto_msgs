@@ -37,10 +37,6 @@ module autoware_auto_vehicle_msgs{
 			@verbatim (language = "comment", text = "The acceleration deviation error computed by the controller")
 			@default (value = 0.0)
 			double acceleration_error_read;
-
-			@verbatim (language = "comment", text = "The NMPC computed value - cost ")
-			@default (value = 0.0)
-			double nmpc_value;
 		};
 	};
 };
