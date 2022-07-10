@@ -79,7 +79,7 @@ module autoware_auto_vehicle_msgs{
 
 			@verbatim (language = "comment", text = "Lateral acceleration computed by the NMPC")
 			@default (value = 0.0)
-			double lateral_acceleration;
+			double lateral_velocity;
 
 			@verbatim (language = "comment", text = "Finite State Machine State Values")
 			@default (value = 0.0)
