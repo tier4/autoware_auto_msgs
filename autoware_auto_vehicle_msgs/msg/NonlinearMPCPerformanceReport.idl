@@ -77,6 +77,10 @@ module autoware_auto_vehicle_msgs{
 			@default (value = 0.0)
 			double yaw_angle_target;
 
+			@verbatim (language = "comment", text = "Target yaw angle computed by the NMPC")
+			@default (value = 0.0)
+			double yaw_angle_ukf;
+
 			@verbatim (language = "comment", text = "Lateral acceleration computed by the NMPC")
 			@default (value = 0.0)
 			double lateral_velocity;
