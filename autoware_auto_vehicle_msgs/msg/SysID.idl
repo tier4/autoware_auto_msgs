@@ -1,0 +1,22 @@
+#include "builtin_interfaces/msg/Time.idl"
+
+module autoware_auto_vehicle_msgs{
+  module msg {
+    @verbatim (language = "comment", text = "The First Order System Identification Message ")
+    struct SysID
+    {
+      builtin_interfaces::msg::Time stamp;
+
+      // Lateral deviation - error
+      @verbatim (language = "comment", text = "The first param of xdot = -a*x + b*u")
+      @default (value = 0.0)
+      double a;
+
+      // Heading deviation - error
+      @verbatim (language = "comment", text = "The second parameter")
+      @default (value = 0.0)
+      double b;
+
+    };
+  };
+};
