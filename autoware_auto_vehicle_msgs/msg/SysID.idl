@@ -7,15 +7,25 @@ module autoware_auto_vehicle_msgs{
     {
       builtin_interfaces::msg::Time stamp;
 
-      // Lateral deviation - error
+      // First parameter
       @verbatim (language = "comment", text = "The first param of xdot = -a*x + b*u")
       @default (value = 0.0)
       double a;
 
-      // Heading deviation - error
+      // Second parameter
       @verbatim (language = "comment", text = "The second parameter")
       @default (value = 0.0)
       double b;
+
+      // Tracked parameters
+      @verbatim (language = "comment", text = "Tracking differentiator x")
+      @default (value = 0.0)
+      double xtracked;
+
+
+      @verbatim (language = "comment", text = "Tracking differentiator xdot")
+      @default (value = 0.0)
+      double xtracked_dot;
 
     };
   };
