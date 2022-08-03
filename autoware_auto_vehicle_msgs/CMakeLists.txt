@@ -37,6 +37,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/WipersCommand.idl"
   "msg/WipersReport.idl"
   "srv/AutonomyModeChange.idl"
+  "srv/ControlModeCommand.srv"
   DEPENDENCIES
     "autoware_auto_planning_msgs"
     "builtin_interfaces"
