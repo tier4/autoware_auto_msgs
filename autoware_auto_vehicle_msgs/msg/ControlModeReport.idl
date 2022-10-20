@@ -5,9 +5,11 @@ module autoware_auto_vehicle_msgs {
     module ControlModeReport_Constants {
       const uint8 NO_COMMAND = 0;
       const uint8 AUTONOMOUS = 1;
-      const uint8 MANUAL = 2;
-      const uint8 DISENGAGED = 3;
-      const uint8 NOT_READY = 4;
+      const uint8 AUTONOMOUS_STEER_ONLY = 2;
+      const uint8 AUTONOMOUS_VELOCITY_ONLY = 3;
+      const uint8 MANUAL = 4;
+      const uint8 DISENGAGED = 5;
+      const uint8 NOT_READY = 6;
     };
     @verbatim (language="comment", text=
       " ControlModeReport.msg")
