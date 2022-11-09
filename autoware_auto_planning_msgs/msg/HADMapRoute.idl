@@ -21,6 +21,10 @@ module autoware_auto_planning_msgs {
         " segment defined in the route_semgents array.")
       geometry_msgs::msg::Pose goal_pose;
 
+      @verbatim (language="comment", text=
+        " UUID to identify the route")
+      unique_identifier_msgs::msg::UUID id;
+
       sequence<autoware_auto_mapping_msgs::msg::HADMapSegment> segments;
     };
   };
