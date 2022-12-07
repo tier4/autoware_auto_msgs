@@ -9,7 +9,8 @@ module autoware_auto_planning_msgs {
     struct Path {
       std_msgs::msg::Header header;
       sequence<autoware_auto_planning_msgs::msg::PathPoint> points;
-      nav_msgs::msg::OccupancyGrid drivable_area;
+      sequence<geometry_msgs::msg::Point> left_bound;
+      sequence<geometry_msgs::msg::Point> right_bound;
     };
   };
 };

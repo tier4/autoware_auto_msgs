@@ -9,7 +9,8 @@ module autoware_auto_planning_msgs {
     struct PathWithLaneId {
       std_msgs::msg::Header header;
       sequence<autoware_auto_planning_msgs::msg::PathPointWithLaneId> points;
-      nav_msgs::msg::OccupancyGrid drivable_area;
+      sequence<geometry_msgs::msg::Point> left_bound;
+      sequence<geometry_msgs::msg::Point> right_bound;
     };
   };
 };
