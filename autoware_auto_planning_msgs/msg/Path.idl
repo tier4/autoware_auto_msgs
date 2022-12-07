@@ -5,7 +5,7 @@
 module autoware_auto_planning_msgs {
   module msg {
     @verbatim (language = "comment", text=
-      "Contains a PathPoint path and an OccupancyGrid of drivable_area.")
+      "Contains a PathPoint path and left and right bound.")
     struct Path {
       std_msgs::msg::Header header;
       sequence<autoware_auto_planning_msgs::msg::PathPoint> points;
