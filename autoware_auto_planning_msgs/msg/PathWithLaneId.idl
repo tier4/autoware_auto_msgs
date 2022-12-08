@@ -5,7 +5,7 @@
 module autoware_auto_planning_msgs {
   module msg {
     @verbatim (language = "comment", text=
-      "Contains a PathPointWithLaneId path and left an right bound.")
+      "Contains a PathPointWithLaneId path and left and right bound.")
     struct PathWithLaneId {
       std_msgs::msg::Header header;
       sequence<autoware_auto_planning_msgs::msg::PathPointWithLaneId> points;
