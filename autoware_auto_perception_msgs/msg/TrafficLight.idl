@@ -12,18 +12,20 @@ module autoware_auto_perception_msgs {
       const uint8 LEFT_ARROW = 6;
       const uint8 RIGHT_ARROW = 7;
       const uint8 UP_ARROW = 8;
-      const uint8 DOWN_ARROW = 9;
-      const uint8 DOWN_LEFT_ARROW = 10;
-      const uint8 DOWN_RIGHT_ARROW = 11;
-      const uint8 CROSS = 12;
+      const uint8 UP_LEFT_ARROW = 9;
+      const uint8 UP_RIGHT_ARROW = 10;
+      const uint8 DOWN_ARROW = 11;
+      const uint8 DOWN_LEFT_ARROW = 12;
+      const uint8 DOWN_RIGHT_ARROW = 13;
+      const uint8 CROSS = 14;
 
       // constants for status
-      const uint8 SOLID_OFF = 13;
-      const uint8 SOLID_ON = 14;
-      const uint8 FLASHING = 15;
+      const uint8 SOLID_OFF = 15;
+      const uint8 SOLID_ON = 16;
+      const uint8 FLASHING = 17;
 
       // constants for common use
-      const uint8 UNKNOWN = 16;
+      const uint8 UNKNOWN = 18;
     };
     struct TrafficLight {
       @default (value=0)
