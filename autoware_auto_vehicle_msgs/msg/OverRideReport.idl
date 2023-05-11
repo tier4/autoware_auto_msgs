@@ -1,0 +1,21 @@
+#include "builtin_interfaces/msg/Time.idl"
+
+module autoware_auto_vehicle_msgs {
+  module msg {
+    module OverRideReport_Constants {
+      const uint8 DISABLE_ACCEL = 1;
+      const uint8 ENABLE_ACCEL = 2;
+      const uint8 DISABLE_BRAKE = 3;
+      const uint8 ENABLE_BRAKE = 4;
+      const uint8 DISABLE_STEERING = 5;
+      const uint8 ENABLE_STEERING = 6;
+    };
+    struct OverRideReport {
+      builtin_interfaces::msg::Time stamp;
+
+      @default (value=FALSE)
+      boolean report;
+    };
+  };
+};
+
