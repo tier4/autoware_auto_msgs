@@ -1,0 +1,17 @@
+#include "builtin_interfaces/msg/Time.idl"
+
+module autoware_auto_vehicle_msgs {
+  module msg {
+    module EmergencyButtonReport_Constants {
+      const uint8 DISABLE = 1;
+      const uint8 ENABLE = 2;
+    };
+
+    struct EmergencyButtonReport {
+      builtin_interfaces::msg::Time stamp;
+
+      @default (value=0)
+      uint8 report;
+    };
+  };
+};
