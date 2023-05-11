@@ -41,6 +41,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/WheelEncoder.idl"
   "msg/WipersCommand.idl"
   "msg/WipersReport.idl"
+  "msg/WheelSpeedReport.idl"
   "srv/AutonomyModeChange.idl"
   "srv/ControlModeCommand.srv"
   DEPENDENCIES
