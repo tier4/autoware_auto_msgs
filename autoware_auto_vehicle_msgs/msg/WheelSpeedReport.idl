@@ -8,13 +8,10 @@ module autoware_auto_vehicle_msgs {
       std_msgs::msg::Header header;
 
       @default (value=0.0)
-      float longitudinal_velocity;
-
-      @default (value=0.0)
-      float lateral_velocity;
-
-      @default (value=0.0)
-      float heading_rate;
+      float front_left_wheel_speed;
+      float front_right_wheel_speed;
+      float rear_left_wheel_speed;
+      float rear_right_wheel_speed;
     };
   };
 };
