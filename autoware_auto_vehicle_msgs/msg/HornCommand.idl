@@ -2,6 +2,11 @@
 
 module autoware_auto_vehicle_msgs {
   module msg {
+    module HornCommand_Constants {
+      const uint8 NO_COMMAND = 0;
+      const uint8 DISABLE_HORN = 1;
+      const uint8 ENABLE_HORN = 2;
+    };
     @verbatim (language="comment", text=
     " Command for controlling a horn.")
 

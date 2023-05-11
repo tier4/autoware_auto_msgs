@@ -2,6 +2,10 @@
 
 module autoware_auto_vehicle_msgs {
   module msg {
+    module HornReport_Constants {
+      const uint8 DISABLE_HORN = 1;
+      const uint8 ENABLE_HORN = 2;
+    };
     struct HornReport {
       builtin_interfaces::msg::Time stamp;
 
