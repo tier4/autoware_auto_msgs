@@ -1,0 +1,10 @@
+module autoware_auto_perception_msgs {
+  module msg {
+    struct TrafficLightOcclusion {
+      @default (value=0)
+      int32 occlusion_ratio;
+      
+      int32 id;
+    };
+  };
+};
