@@ -1,5 +1,6 @@
 #include "geometry_msgs/msg/AccelWithCovariance.idl"
 #include "geometry_msgs/msg/Point.idl"
+#include "geometry_msgs/msg/PoseWithCovariance.idl"
 #include "geometry_msgs/msg/Quaternion.idl"
 #include "geometry_msgs/msg/TwistWithCovariance.idl"
 
