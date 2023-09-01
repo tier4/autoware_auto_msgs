@@ -1,4 +1,5 @@
 #include "builtin_interfaces/msg/Duration.idl"
+#include "geometry_msgs/msg/Pose.idl"
 
 module autoware_auto_planning_msgs {
   module msg {
